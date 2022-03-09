@@ -1,2 +1,2 @@
-# User-Accounts-Management
-User Accounts Management App using Node,Js
+# User-Management-System
+User Accounts Management App using Node.Js
