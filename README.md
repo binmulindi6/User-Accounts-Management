@@ -1,7 +1,6 @@
 # User-Management-System
-User Accounts Management App using Node.Js
+##User Accounts Management App using Node.Js
 
-# Use :
 ## This app helps you to control users login and SignUp 
 
 ## init :
@@ -12,7 +11,7 @@ User Accounts Management App using Node.Js
 - user profile page
 - user profile edit page
 
-### Admin Side
+### Admin Side :
 
 - User Side
 - all Users Details and Profiles Displaygit
