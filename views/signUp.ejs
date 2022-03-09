@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title> Sign Up </title>
+	<link rel="stylesheet" href="/styles/signUp.css">
+	<%- //include('./partials/sign-style.ejs') %> 
+
+	</head>
+	<body>
+
+		<div class="main">
+		
+			<div class="container content-container" id="content">
+				
+				<b class="title"> Sign Up <span class="sub-title">or <a href="/login"> Login </a></span> </b> 
+				<form ref="signUpForm" class="container form-container" action="/signUp" method="POST">
+					<div class="form-group">
+						<label for="name"> First Name </label>
+						<input type="text" class="identity" placeholder="your first name here..." name="fname" required="required">
+					</div>
+					<div class="form-group">
+						<label for="lname"> Last Name </label>
+						<input type="text" class="identity" placeholder="your last name here..." name="lname" required="required">
+					</div>
+					<div class="form-group">
+						<label for="lname"> Sex </label>
+						<select name="sex" id="sex" required>
+							<option value="" selected disabled> You are?</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="NaN">Not Binary</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="bday"> Birthday </label>
+						<input type="date" id="birthday" name="bday" required="required">
+					</div>
+					<div class="form-group">
+						<label for="email"> Email <span class="error"><%= error.email  %> </span> </label>
+						<input type="mail" class="identity" placeholder="example@test.com" name="email" required="required">
+					</div>
+					<div class="form-group">
+						<label for="usermane"> Username <span class="error"><%= error.username  %> </span> </label>
+						<input type="text" class="identity" placeholder="your username here..." name="username" required="required" >
+					</div>
+					<div class="form-group">
+						<label for="telephone"> Telephone </label>
+						<input type="tel" class="identity" placeholder="your Telephone number here..." name="telephone" required="required" >
+					</div>
+					<div class="form-group">
+						<label for="password"> Create Password </label>
+						<input id="password" type="password" placeholder="password" name="password" required="required">
+					</div>
+					<div class="form-group">
+						<label for="confirmPassword"> Confirm Password </label>
+						<input id="password" type="password" placeholder="password" name="confirmPassword" required="required">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn-sign-up"> Sign Up </button>	
+					</div>
+
+				</form>
+				
+				
+			</div>
+		</div>
+	
+	</body>
+</html>

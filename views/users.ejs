@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/users.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Users</title>
+</head>
+<body>
+    <div class="main">
+        <% if (users.length > 0) { 
+            
+                users.forEach(user => { %>
+                    
+            
+        %> 
+                <div class="contaier display">
+                    <a href="users/<%= user.id %>" class=" container item">
+                        <div class="avatar" style="background-image: url('/img/<%= user.image %>')"></div>
+                        <div class="details container">
+                            <sapn class="title item-name"> 
+                                 id : <%= user.id %>
+                            </sapn>
+                            <sapn class="title item-name">
+                                username : <%= user.username %>
+                            </sapn>
+                        </div>
+                    </a>    
+                </div>
+
+        <%      });
+            } else { %>
+                <div class="container display">
+                    <img src="/img/error.jpg" alt="" width="300px">
+                    <span class="error"> NO DATA TO DISPLAY </span>
+                    <a href="/signup"><button class=" btn primary">Sign Up</button></a>
+                </div>
+        <%  } %> 
+    </div>
+</body>
+</html>

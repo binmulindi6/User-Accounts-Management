@@ -1,0 +1,17 @@
+<select class="form-control" name="sex" id="sex" required>
+    <option value=""disabled> You are?</option>
+<%  if(user.sex == 'Female') {%> 
+    <option value="Male" >Male</option>
+    <option value="Female" selected>Female</option>
+    <option value="NaN">Not Binary</option>
+<% }%>
+<%  if(user.sex == 'Male') {%> 
+    <option value="Male" selected>Male</option>
+    <option value="Female">Female</option>
+    <option value="NaN">Not Binary</option>
+<% } else { %>
+    <option value="Male" >Male</option>
+    <option value="Female" >Female</option>
+    <option value="Not Binary" selected>Not Binary</option>
+<% } %> 
+</select>

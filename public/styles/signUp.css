@@ -1,0 +1,154 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Linux, sans-serif;
+			 
+}
+
+input{
+	font-weight: 500;
+}
+
+.main{
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	padding: 30px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+.container{
+	padding: 10px;
+	margin: auto;
+}
+
+.title{
+	color: #000;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1.5rem;
+}
+
+.content-container{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.515);
+	border-radius: 30px;
+	
+}
+
+.form-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	gap: 0.5em;
+
+}
+
+label{
+	font-size: 0.8rem;
+	font-weight: 600
+}
+
+label::after{
+	content: "*";
+	color: crimson;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+input{
+	outline: none;
+}
+.identity{
+	display: block;
+	border: 2px solid #001;
+	border-radius: 20px;
+	color: #000;
+	height: 40px;
+	width: 350px;
+	padding-left: 10px;
+
+}
+
+
+#birthday{
+	display: block;
+	border: 2px solid #001;
+	color: #000;
+	border-radius: 20px;
+	height: 40px;
+	width: 350px;
+	
+
+}
+
+#sex{
+	display: block;
+	border: 2px solid #001;
+	color: #000;
+	border-radius: 20px;
+	height: 40px;
+	width: 360px;
+	padding-left: 10px;
+}
+
+#password{
+	display: block;
+	color: #000;
+	border: 2px solid #001;
+	border-radius: 20px;
+	height: 40px;
+	width: 350px;
+	padding-left: 10px;
+
+}
+
+.error{
+	color: rgb(255, 0, 51);
+	font-weight: 650;
+}
+
+.btn-sign-up{
+	color: white;
+	background-color: #0084ff;
+	margin:auto;
+	border-radius: 20px;
+	height: 40px;
+	width: 250px;
+	display: block;
+	cursor: pointer;
+	border: none;
+}
+
+
+.btn-sign-up:hover{
+	transition: 1s;
+	background-color: crimson;
+}
+
+@media screen and (max-width: 800px){
+	.main{
+		padding: 30px 0 20px 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.content-container{
+		width: 100vw;
+	}
+
+	.identity,#birthday,#password,#sex{
+		width: 80vw;
+	}
+
+	.btn-sign-up{
+		width: 60vw;
+	}
+}

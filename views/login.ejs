@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title> Connexion </title>
+	<link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+	
+	<div class="main">
+		<div class="container content-container" >
+			<b class="title"> connexion</b>
+			<form class="container form-container" action="/login" method="post">
+
+				<input name="username" id="username" type="text" placeholder="username or email" required>
+				<input name="password" id="password" type="password" placeholder="password" required>
+				<button id="connexion" type="submit"> Connexion </button>
+				<a href="/signUp"> Sign Up </a>
+				<div class="error"> <%= error %> </div>
+			</form>	
+			
+		</div>
+	</div>
+
+</body>
+</html>

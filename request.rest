@@ -1,0 +1,45 @@
+##    LOGIN PAGE
+
+GET http://localhost:3000/login
+
+###
+GET http://localhost:3000/
+###
+
+http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "ABAGabo6@gmail.com",
+    "password" : "1234"
+}
+
+
+####        SINGUP PAGE
+
+GET http://localhost:3000/signup
+
+###
+
+GET http://localhost:3000/signup/users
+
+###
+
+POST  http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "fname" : "Abraham12",
+    "lname" : "tommy",
+    "bday" : "2001-12-01",
+    "email" : "ABAGabo6@gmail.com",
+    "username" : "dev.binmulindi6  ",
+    "password" : "1234",
+    "confirmPassword" : "1234"
+}
+
+###
