@@ -2,7 +2,8 @@
 User Accounts Management App using Node.Js
 
 # Use :
-## This app helps you to control users login and SignUp 
+## This app helps you to control users login and SignUp
+
 
 ## init :
 
@@ -16,3 +17,6 @@ User Accounts Management App using Node.Js
 
 - User Side
 - all Users Details and Profiles Displaygit
+
+## features
+- user data crypted by Bcrypt
